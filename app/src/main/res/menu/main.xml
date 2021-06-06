@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Main">
+            <menu>
+
+                <item
+                    android:id="@+id/home"
+                    android:title="Home"
+                    android:icon="@drawable/ic_home"/>
+
+                <item
+                    android:id="@+id/department"
+                    android:title="Department"
+                    android:icon="@drawable/ic_department"/>
+
+                <item
+                    android:id="@+id/institution"
+                    android:title="Institutions"
+                    android:icon="@drawable/ic_institutions"/>
+
+                <item
+                    android:id="@+id/activity"
+                    android:title="Our Activity and News"
+                    android:icon="@drawable/ic_activity"/>
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Information">
+            <menu>
+
+                <item
+                    android:id="@+id/about"
+                    android:title="About"
+                    android:icon="@drawable/ic_about"/>
+
+                <item
+                    android:id="@+id/join"
+                    android:title="Join Us"
+                    android:icon="@drawable/ic_joinus"/>
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Communication">
+            <menu>
+
+                <item
+                    android:id="@+id/contact"
+                    android:title="Contact Us"
+                    android:icon="@drawable/ic_contact"/>
+
+                <item
+                    android:id="@+id/profile"
+                    android:title="Profile"
+                    android:icon="@drawable/ic_profile"/>
+
+            </menu>
+        </item>
+
+    </group>
+
+
+</menu>
