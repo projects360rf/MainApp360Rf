@@ -2,4 +2,215 @@
     <string name="app_name">360 Research Foundation</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+
+    <string name="mission_vision">Mission / Vision</string>
+    <string name="why_360">Why 360?</string>
+    <string name="founder">Founder</string>
+    <string name="body">Body</string>
+    <string name="board">Board</string>
+
+    <string name="about_us_page"><b>The 360 Research Foundation (360RF)</b> is a National
+        level initiative to promote and facilitate the grassroots researches and
+        technological innovations with collaborative and interdisciplinary research
+        and enhancement of research networking capacity and infrastructure. Its mission
+        is to help researchers, innovators and creative minds in the field if empowerment
+        and livelihood. 360 RF scouts, supports, educates, provides training in research
+        and related skills and spawns’ researches and innovations developed by
+        individuals, local team and communities in any field, helping in human survival
+        and scientific research. 360  has proved that grassroots innovators can
+        match anyone in the world when it comes to solving problems creatively. They
+        perform better than others in generating greater sustainable alternatives by
+        using local resources frugally. Those who see poor only as the consumers of
+        cheap goods, miss the richness of knowledge at grassroots level and their
+        potential as provider of ideas and innovations.</string>
+
+    <string name="mission_and_vision_title">Mission and Vision</string>
+    <string name="why_choose_360_title">Why Choose 360</string>
+    <string name="our_founder_title">Our Founder</string>
+    <string name="general_governing_body_title">General/Governing Body</string>
+    <string name="board_members_title">Board Members</string>
+
+    <string name="our_mission_title"> <b>OUR MISSION</b> </string>
+    <string name="our_mission_1">To enable the achievement of excellence
+        by the research community, the 360 Research Foundation: </string>
+    <string name="our_mission_2">1. Partners with the research community
+        to create a culture of high achievement</string>
+    <string name="our_mission_3">2. Promotes shared responsibility, the
+        ethical conduct of research, and compliance</string>
+    <string name="our_mission_4">3. Enhances researchers’ abilities to
+        obtain and manage grants</string>
+    <string name="our_mission_5">4. Creates integrated services, transparent
+        research administration, infrastructure, and streamlined processes</string>
+    <string name="our_mission_6">5. Advocates for the needs of the 360
+        RF research community </string>
+    <string name="our_mission_7">6. Broadens awareness of the value of
+        360 RF research </string>
+    <string name="our_mission_8">7. Develops strong relationships with
+        sponsors </string>
+    <string name="our_mission_9">8. Enhances the ability to perform research
+        in community</string>
+    <string name="our_mission_10">9. Supports strong infrastructure for
+        interdisciplinary research</string>
+
+    <string name="our_vision_title"> <b>VISION</b> </string>
+    <string name="our_vision">To enable the achievement of excellence
+        by the research community, the 360 Research Foundation</string>
+
+    <string name="choose_360_title"> <b>360 Research Foundation provides these benefits
+        to you and your team:  </b> </string>
+    <string name="choose_360_title_1"> <b>(a) Research and Innovation:</b> </string>
+    <string name="choose_360_title_2"> <b>(b) Social Development and Employment:</b> </string>
+
+    <string name="Research_and_Innovation_1">1.We see our role in the future of the 360
+        Research Foundation as making it easier for researchers and Innovators to carry
+        out their research/innovation by being responsive, proactive and innovative.</string>
+    <string name="Research_and_Innovation_2">2.We are committed to treating each other,
+        our process partners and others we work with, as valued colleagues, guided by
+        open communication, collaboration, partnership, integrity and respect in order
+        to achieve our common goals.</string>
+    <string name="Research_and_Innovation_3">3.We make our decisions with openness and
+        honesty, and to enhance the value of the organization campus-wide.</string>
+    <string name="Research_and_Innovation_4">4.We promote responsible research practices
+        in alignment with ethical principles and compliance regulations.</string>
+    <string name="Research_and_Innovation_5">5.We encourage innovation, reflective
+        thinking, flexibility and adaptability in our approaches to our work, in
+        alignment with our mission to create client-centered services.</string>
+    <string name="Research_and_Innovation_6">6.We are committed to providing a culture
+        of continuous learning for all.</string>
+    <string name="Research_and_Innovation_7">7.We support a work/life balance for all in
+        our organization.</string>
+    <string name="Research_and_Innovation_8">8.We are committed to developing a range of
+        resources and strategies designed to provide the highest level of quality services
+        possible to the research community that positions the 360 RF research program for
+        a successful future.</string>
+    <string name="Research_and_Innovation_9">9.We value and welcome a diversity of staff,
+        as an organization that is enriched by a multitude of perspectives and experiences.</string>
+
+    <string name="Social_Development_And_Employment_1">1.Improvement of the standard of
+        living and quality of life for all. We do this by promoting employment that is
+        highly skilled.</string>
+    <string name="Social_Development_And_Employment_2">2.The social development by listening
+        to people and promoting their voices in the development process; understanding and
+        addressing their needs, priorities and aspirations; and building formal and informal
+        institutions.</string>
+    <string name="Social_Development_And_Employment_3">3.Women Empowerment</string>
+    <string name="Social_Development_And_Employment_4">4.Child Development</string>
+    <string name="Social_Development_And_Employment_5">5.The theoretical knowledge and
+        practical skills.</string>
+
+    <string name="about_founder_1">First and foremost thing it is my privilege to
+        introduce my personal details of the beginning of my journey into this amazing
+        path. This is Sudhanshu Kumar Shekhar who always considers himself very unique
+        comparing to grow up as those children rising up to his equal. I was grown up
+        as very different among those normal children who always wanted to do something
+        different and as I was the child as very innovative skills who used to do such
+        kind of things as my parents recalls. So, therefore grown with such enthusiasm
+        curiousness.</string>
+    <string name="about_founder_2">I became even more connected deeply into these
+        inventing creating the wonderful things and discover explore study and find
+        out the ‘truth’ solution resolution of everything related to the life and Nature
+        so. I began my journey on the great path. According to my parents, I was very
+        innovative since my very childhood. I was giving priority to innovate something
+        instead of playing. I applied to NIF for my Innovation named OPD (Overflow
+        Protector Device), I was in 12th class that time. After a long time they called
+        me for verification of educational qualification and other questions, I passed
+        12th and went to T.P.Verma College, Narkatiaganj. After 3 month I got the letter
+        from National Innovation Foundation, my teacher Mr. Mukund Murari Ram was with
+        me that time and I was very much excited after getting letter. I requested my
+        teacher to read the letter loudly because I was flying on seventh sky and thinking
+        that I am going to meet Dr. A.P.J.Abdul Kalam sir at Rashtrapati Bhawan. This was
+        the turning point of my life, my teacher reduced the loudness of the sound because
+        it was mentioned that Sudhanshu you can understand we have a boundary, you are
+        student of B.Sc and students with upto 12th qualification can participate in this
+        programme so you cannot be a part of the NIF programme. It was plop down for me
+        but I promised myself it should not be happened with any other student or people.</string>
+    <string name="about_founder_3">I started a group since 13 December 2015 to support
+        every innovative individual; I run this group every Sunday. I selected the name
+        360 Research and Innovation Group (360: It means no limitation for Age and
+        Educational Qualification, Research: to support Researchers, Innovation: to
+        Support Innovative People) for our group. We have motivated and supported
+        thousands of students and people till the date and our group members got many
+        awards from local level to the national level for innovations till the date. We
+        have registered our group as 360 Research Foundation with the Govt. of Bihar and
+        central Govt. of India also.</string>
+    <string name="about_founder_4">We have many branches for different activities. Now,
+        I can say people come on the Earth and pass their lives in eating and drinking
+        but my point of view is that we must do something wonderful or miracle that world
+        may remember us for thousands of years. We all are in this human world where
+        disappointments ruins us break us but i am the person who never give up or react
+        on the way as common people do.Since those saddest incident I have had decided to
+        build my own way then i continued walking on my aims of achievement. Today i
+        proudly consider myself as a victorious founder as President of my organization
+        who not only made his mark but given more people and children a New Horizon.Live
+        and Give is my mission that makes me worth of my life.By the time people from
+        various respective field are connected to me and providing their support or eager
+        to work under my supervision.I am succeed to announce theres nothing impossible
+        once you give it from your heart and self belief.</string>
+    <string name="about_founder_5">Sudhanshu Kumar Shekhar</string>
+    <string name="about_founder_6">(Founder &amp; President)</string>
+    <string name="about_founder_7">360 Research Foundation</string>
+
+    <string name="general_body_title">Responsibility of the General Body:</string>
+    <string name="general_body_1">1.To prepare annual programs and policies.</string>
+    <string name="general_body_2">2.To discuss and to decide all such other matters and
+        issues which are directly or indirectly related to the affairs of the 360 Research
+        Foundation.</string>
+    <string name="general_body_3">3.To pass annual budget of the 360 Research Foundation.</string>
+    <string name="general_body_4">4.To consider any business brought forwards by the
+        governing body.</string>
+    <string name="governing_body_title_1">Responsibility of the Governing body:</string>
+    <string name="governing_body_title_2">The Governing Body coordinates activities of
+        all the subject matter Departments/Units, including circulation/approvals of
+        Projects/ letters/ papers received from other Departments in 360 Research Foundation,
+        issues meeting notices/prepare agenda notes as well as minutes of the meetings of
+        360 Research Foundation.</string>
+    <string name="governing_body_1">1.To take necessary steps for the implementation of
+        the programs and policies drawn by the general body.</string>
+    <string name="governing_body_2">2.To pass the necessary expenditure to meet the day
+        to day requirements of the 360 Research Foundation.</string>
+    <string name="governing_body_3">3.To take dedication on applications for membership
+        /Job/Partnership/Proposal.</string>
+    <string name="governing_body_4">4.To appoint committee for disposal of any pertaining
+        to the trust.</string>
+    <string name="governing_body_5">5.To arrange, Finance if required from other bank(s),
+        institution or individual on reasonable terms and condition and governing body as
+        a whole is liable for its return.</string>
+    <string name="governing_body_6">6.To appoint, terminate and fix duties of all staff.</string>
+    <string name="governing_body_7">7.To receive, to have custody of and to expand the
+        funds of the 360 Research Foundation and to manage the properties of the 360
+        Research Foundation.</string>
+    <string name="governing_body_8">8.To sue and defend all legal proceeding of behalf
+        of the 360 Research Foundation.</string>
+    <string name="governing_body_9">9.To take all such other legal steps which may appear
+        beneficial for the smooth and better management of the 360 Research Foundation. </string>
+
+    <string name="board_person_1_name">Sudhanshu Kumar Shekhar</string>
+    <string name="board_person_1_title_1">Founder &amp; President</string>
+    <string name="board_person_1_title_2">360 Research Foundation</string>
+
+    <string name="board_person_2_name">Pradeep Kumar Seraphim</string>
+    <string name="board_person_2_title_1">Director, Team A</string>
+    <string name="board_person_2_title_2">General Secretary, Governing Body</string>
+
+    <string name="board_person_3_name">Manibhushan Kumar Mishra</string>
+    <string name="board_person_3_title_1">Secretary</string>
+    <string name="board_person_3_title_2">360 Research Foundation</string>
+
+    <string name="board_person_4_name">Krishna Kumar Pathak</string>
+    <string name="board_person_4_title_1">Treasurer</string>
+    <string name="board_person_4_title_2">360 Research Foundation</string>
+
+    <string name="board_person_5_name">Kumari Miki Pandey</string>
+    <string name="board_person_5_title_1">Executive Member</string>
+    <string name="board_person_5_title_2">360 Research Foundation</string>
+
+    <string name="board_person_6_name">Shyamsundar Sah</string>
+    <string name="board_person_6_title_1">Executive Member</string>
+    <string name="board_person_6_title_2">360 Research Foundation</string>
+
+    <string name="board_person_7_name">Uttam Prakash</string>
+    <string name="board_person_7_title_1">Executive Member</string>
+    <string name="board_person_7_title_2">360 Research Foundation</string>
+
+    <string name="blank">Nothing</string>
 </resources>

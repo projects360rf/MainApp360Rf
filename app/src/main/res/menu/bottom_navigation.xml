@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_missionVision"
+        android:icon="@drawable/ic_missionvision"
+        android:title="@string/mission_vision"/>
+
+    <item
+        android:id="@+id/nav_choose"
+        android:icon="@drawable/ic_choose"
+        android:title="@string/why_360"/>
+
+    <item
+        android:id="@+id/nav_founder"
+        android:icon="@drawable/ic_founder"
+        android:title="@string/founder"/>
+
+    <item
+        android:id="@+id/nav_body"
+        android:icon="@drawable/ic_body"
+        android:title="@string/body"/>
+
+    <item
+        android:id="@+id/nav_board"
+        android:icon="@drawable/ic_board"
+        android:title="@string/board"/>
+
+
+</menu>

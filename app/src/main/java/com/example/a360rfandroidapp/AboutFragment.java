@@ -8,12 +8,21 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
+import android.view.MenuItem;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class AboutFragment extends Fragment {
 
-    @Nullable
+    Fragment selectedFragment = null;
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_about, container, false);
+        View v = inflater.inflate(R.layout.fragment_about, container, false);
+
+        return v;
     }
+
 }

@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigation = findViewById(R.id.side_navigation);
         toolbar = findViewById(R.id.toolbar);
 
+
         setSupportActionBar(toolbar);
 
         toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         navigation.setNavigationItemSelectedListener(this);
+
 
         if (savedInstanceState == null){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
@@ -72,11 +76,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new ActivityFragment()).commit();
                 Toast.makeText(getApplicationContext(), "activity", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.about:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new AboutFragment()).commit();
-                Toast.makeText(getApplicationContext(), "about", Toast.LENGTH_SHORT).show();
-                break;
             case R.id.join:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new JoinFragment()).commit();
@@ -89,6 +88,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.profile:
                 Toast.makeText(getApplicationContext(), "Feature To Be Added Soon", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.about:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AboutFragment()).commit();
+                Toast.makeText(getApplicationContext(), "about", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_missionVision:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new MissionVisionFragment()).commit();
+                Toast.makeText(getApplicationContext(), "Mission and Vision", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_choose:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ChooseFragment()).commit();
+                Toast.makeText(getApplicationContext(), "Why Choose 360?", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_founder:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new FounderFragment()).commit();
+                Toast.makeText(getApplicationContext(), "Founder", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_body:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new BodyFragment()).commit();
+                Toast.makeText(getApplicationContext(), "Body", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_board:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new BoardFragment()).commit();
+                Toast.makeText(getApplicationContext(), "Board", Toast.LENGTH_SHORT).show();
                 break;
 
         }

@@ -36,24 +36,12 @@
         <item
             android:checkable="false"
             android:enabled="false"
-            android:title="Information"/>
-        <item
-            android:id="@+id/about"
-            android:icon="@drawable/ic_about"
-            android:title="About" />
+            android:title="Communication"/>
 
         <item
             android:id="@+id/join"
             android:icon="@drawable/ic_joinus"
             android:title="Join Us" />
-    </group>
-
-    <group android:checkableBehavior="single">
-
-        <item
-            android:checkable="false"
-            android:enabled="false"
-            android:title="Communication"/>
 
         <item
             android:id="@+id/contact"
@@ -67,5 +55,41 @@
 
     </group>
 
+    <group android:checkableBehavior="single">
+
+        <item
+            android:checkable="false"
+            android:enabled="false"
+            android:title="Information"/>
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_missionVision"
+            android:icon="@drawable/ic_missionvision"
+            android:title="@string/mission_vision"/>
+
+        <item
+            android:id="@+id/nav_choose"
+            android:icon="@drawable/ic_choose"
+            android:title="@string/why_360"/>
+
+        <item
+            android:id="@+id/nav_founder"
+            android:icon="@drawable/ic_founder"
+            android:title="@string/founder"/>
+
+        <item
+            android:id="@+id/nav_body"
+            android:icon="@drawable/ic_body"
+            android:title="@string/body"/>
+
+        <item
+            android:id="@+id/nav_board"
+            android:icon="@drawable/ic_board"
+            android:title="@string/board"/>
+    </group>
 
 </menu>
