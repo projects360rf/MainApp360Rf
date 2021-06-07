@@ -1,0 +1,2 @@
+rootProject.name = "RF 360 App"
+include ':app'

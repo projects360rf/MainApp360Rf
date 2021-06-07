@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_institution"
+            android:title="Institutions"
+            android:icon="@drawable/ic_institution"/>
+
+        <item android:id="@+id/nav_join"
+            android:title="Join Us"
+            android:icon="@drawable/ic_join_menu"/>
+
+
+    </group>
+</menu>
