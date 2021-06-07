@@ -28,11 +28,6 @@ class SliderAdapter(context: Context,var sliderDataList : ArrayList<SliderData>)
     override fun onBindViewHolder(viewHolder: SliderViewHolder?, position: Int) {
         val sliderItem = sliderDataList[position]
         if (viewHolder != null) {
-//            Glide.with(viewHolder.itemView)
-//                .load(sliderItem.imgUrl)
-//                .fitCenter()
-//                .into(viewHolder.imgSlider)
-
             viewHolder.imgSlider.setImageResource(sliderItem.imgUrl)
         }
     }

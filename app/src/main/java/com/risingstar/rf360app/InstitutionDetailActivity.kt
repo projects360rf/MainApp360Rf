@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.FrameLayout
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
@@ -21,32 +22,6 @@ import com.smarteist.autoimageslider.SliderView
 import java.util.ArrayList
 
 class InstitutionDetailActivity : AppCompatActivity() {
-/*
-    val firstAid1 = "http://www.360rf.in/sites/default/files/styles/banner/public/2020-12/4_2.jpg?itok=NUGKwxyx"
-    val firstAid2 = "http://www.360rf.in/sites/default/files/inline-images/First%20Aid.jpg"
-
-    val teamA1 = "http://www.360rf.in/sites/default/files/inline-images/IMG20200218170302.jpg"
-    val teamA2 = "http://www.360rf.in/sites/default/files/inline-images/IMG_20190725_124718.jpg"
-    val teamA3 = "http://www.360rf.in/sites/default/files/inline-images/IMG_20190725_122406.jpg"
-
-    val rig1 = "http://www.360rf.in/sites/default/files/inline-images/IMG20171213125359_1.jpg"
-    val rig2 = "http://www.360rf.in/sites/default/files/inline-images/2.jpg"
-    val rig3 = "http://www.360rf.in/sites/default/files/inline-images/3.jpg"
-
-    val kraftLady1 = "http://www.360rf.in/sites/default/files/styles/banner/public/2020-12/tkl.jpg?itok=lHjhFKY-"
-    val kraftLady2 = "http://www.360rf.in/sites/default/files/inline-images/The%20Kraft%20Ladies.jpg"
-
-    val lifeSavers1 = "http://www.360rf.in/sites/default/files/styles/banner/public/2020-12/tls.jpg?itok=Bxk97MSO"
-    val lifeSavers2 = "http://www.360rf.in/sites/default/files/inline-images/i285697114413983942._szw2560h1600_.jpg"
-
-    val mec1 = "http://www.360rf.in/sites/default/files/styles/banner/public/2020-12/MEC-1.jpg?itok=GcQvqacq"
-    val mec2 = "http://www.360rf.in/themes/custom/research_rf/images/360RFBannercopy.jpg"
-
-    val gurukul1 = "http://www.360rf.in/sites/default/files/inline-images/Gurulul%20Coaching%20Centre.jpg"
-    val gurukul2 = "http://www.360rf.in/sites/default/files/inline-images/GURUKUL.jpeg"
-    val gurukul3 = "http://www.360rf.in/sites/default/files/inline-images/Gurukul%20Coaching%20Centre-%20360%20RF.jpg"
-
- */
 
     lateinit var sliderView : SliderView
     lateinit var sliderAdapter: SliderAdapter
@@ -177,46 +152,49 @@ class InstitutionDetailActivity : AppCompatActivity() {
 
         btnContact.setOnClickListener {
             val dialog = Dialog(this@InstitutionDetailActivity)
-            //dialog.setView(R.layout.contact_dialog)
             dialog.setContentView(R.layout.contact_dialog)
             val txtContactName : TextView = dialog.findViewById(R.id.txtContactName)
             val txtContactPosition : TextView = dialog.findViewById(R.id.txtContactPosition)
             val txtContactNumber : TextView = dialog.findViewById(R.id.txtContactNumber)
+            val imgHead : ImageView = dialog.findViewById(R.id.imgHead)
 
             if(instituition == "First Aid"){
                 txtContactName.text = "Uddipta Das"
                 txtContactPosition.text = "Director, FA"
-                txtContactNumber.text = "0123456789"
+                txtContactNumber.text = " "
+                imgHead.setImageResource(R.drawable.fa_director)
             }
             if(instituition == "Team A"){
-                txtContactName.text = "Uddipta Das"
+                txtContactName.text = "Director Name"
                 txtContactPosition.text = "Director, Team A"
-                txtContactNumber.text = "0123456789"
+                txtContactNumber.text = "9471040714"
             }
             if(instituition == "360 rig"){
                 txtContactName.text = "Dr. Prabhat Niraj"
                 txtContactPosition.text = "Director, 360 rig"
-                txtContactNumber.text = "0123456789"
+                txtContactNumber.text = " "
+                imgHead.setImageResource(R.drawable.rig_head)
             }
             if(instituition == "Kraft Lady"){
-                txtContactName.text = "Uddipta Das"
-                txtContactPosition.text = "Director,TKL"
-                txtContactNumber.text = "0123456789"
+                txtContactName.text = "Head Name"
+                txtContactPosition.text = "Head,TKL"
+                txtContactNumber.text = "9471040714"
             }
             if(instituition == "Life Savers"){
                 txtContactName.text = "Lavkush Kumar"
                 txtContactPosition.text = "Director, TLS"
-                txtContactNumber.text = "0123456789"
+                txtContactNumber.text = "9122820407"
+                imgHead.setImageResource(R.drawable.tls_director)
             }
             if(instituition == "MEC"){
-                txtContactName.text = "Uddipta Das"
+                txtContactName.text = "Director Name"
                 txtContactPosition.text = "Director, MEC"
-                txtContactNumber.text = "0123456789"
+                txtContactNumber.text = "9471040714"
             }
             if(instituition == "Gurukul"){
-                txtContactName.text = "XYZ"
+                txtContactName.text = "Director Name"
                 txtContactPosition.text = "Director, Gurukul"
-                txtContactNumber.text = "0123456789"
+                txtContactNumber.text = "9471040714"
             }
 
             txtContactNumber.setOnClickListener {
@@ -228,110 +206,9 @@ class InstitutionDetailActivity : AppCompatActivity() {
 
             dialog.show()
 
-/*
-            val customDialog = layoutInflater.inflate(R.layout.contact_dialog,null)
-            val txtContactName : TextView = customDialog.findViewById(R.id.txtContactName)
-            val txtContactPosition : TextView = customDialog.findViewById(R.id.txtContactPosition)
-            val txtContactNumber : TextView = customDialog.findViewById(R.id.txtContactNumber)
-            DialogInterface.OnShowListener{
-                if(instituition == "First Aid"){
-                    txtContactName.text = "Uddipta Das"
-                    txtContactPosition.text = "Director, First Aid"
-                    txtContactNumber.text = "xxxxxxxxxx"
-                }
-                if(instituition == "Team A"){
-                    txtContactName.text = "Uddipta Das"
-                    txtContactPosition.text = "Director, Team A"
-                    txtContactNumber.text = "xxxxxxxxxx"
-                }
-                if(instituition == "360 rig"){
-                    txtContactName.text = "Dr. Prabhat Niraj"
-                    txtContactPosition.text = "Director, 360 rig"
-                    txtContactNumber.text = "xxxxxxxxxx"
-                }
-                if(instituition == "Kraft Lady"){
-                    txtContactName.text = "Uddipta Das"
-                    txtContactPosition.text = "Director,The Kraft Lady"
-                    txtContactNumber.text = "xxxxxxxxxx"
-                }
-                if(instituition == "Life Savers"){
-                    txtContactName.text = "Lavkush Kumar"
-                    txtContactPosition.text = "Director, The Life Savers"
-                    txtContactNumber.text = "xxxxxxxxxx"
-                }
-                if(instituition == "MEC"){
-                    txtContactName.text = "Uddipta Das"
-                    txtContactPosition.text = "Director, MEC"
-                    txtContactNumber.text = "xxxxxxxxxx"
-                }
-                if(instituition == "Gurukul"){
-                    txtContactName.text = "XYZ"
-                    txtContactPosition.text = "Director, Gurukul"
-                    txtContactNumber.text = "xxxxxxxxxx"
-                }
 
-            }
-            txtContactName.setOnClickListener {
-                val intent = Intent(Intent.ACTION_DIAL)
-                intent.data = Uri.parse("tel:${txtContactName.text}")
-                startActivity(intent)
-            }
-
-            dialog.create()
-            dialog.show()
-
- */
         }
 
 
     }
 }
-/*
-class ContactDialog(var inst : String) : AppCompatDialogFragment(){
-    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val dialog = AlertDialog.Builder(activity as Context)
-        dialog.setView(R.layout.contact_dialog)
-        val customDialog = layoutInflater.inflate(R.layout.contact_dialog,null)
-        val txtContactName : TextView = customDialog.findViewById(R.id.txtContactName)
-        val txtContactPosition : TextView = customDialog.findViewById(R.id.txtContactPosition)
-        val txtContactNumber : TextView = customDialog.findViewById(R.id.txtContactNumber)
-        if(inst == "First Aid"){
-            txtContactName.text = "Uddipta Das"
-            txtContactPosition.text = "Director, First Aid"
-            txtContactNumber.text = "xxxxxxxxxx"
-        }
-        if(inst == "Team A"){
-            txtContactName.text = "Uddipta Das"
-            txtContactPosition.text = "Director, Team A"
-            txtContactNumber.text = "xxxxxxxxxx"
-        }
-        if(inst == "360 rig"){
-            txtContactName.text = "Dr. Prabhat Niraj"
-            txtContactPosition.text = "Director, 360 rig"
-            txtContactNumber.text = "xxxxxxxxxx"
-        }
-        if(inst == "Kraft Lady"){
-            txtContactName.text = "Uddipta Das"
-            txtContactPosition.text = "Director,The Kraft Lady"
-            txtContactNumber.text = "xxxxxxxxxx"
-        }
-        if(inst == "Life Savers"){
-            txtContactName.text = "Lavkush Kumar"
-            txtContactPosition.text = "Director, The Life Savers"
-            txtContactNumber.text = "xxxxxxxxxx"
-        }
-        if(inst == "MEC"){
-            txtContactName.text = "Uddipta Das"
-            txtContactPosition.text = "Director, MEC"
-            txtContactNumber.text = "xxxxxxxxxx"
-        }
-        if(inst == "Gurukul"){
-            txtContactName.text = "XYZ"
-            txtContactPosition.text = "Director, Gurukul"
-            txtContactNumber.text = "xxxxxxxxxx"
-        }
-        return super.onCreateDialog(savedInstanceState)
-    }
-}
-
- */
