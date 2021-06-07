@@ -5,69 +5,65 @@
 
     <group android:checkableBehavior="single">
 
-        <item android:title="Main">
-            <menu>
+        <item
+            android:checkable="false"
+            android:enabled="false"
+            android:title="Main"/>
 
-                <item
-                    android:id="@+id/home"
-                    android:title="Home"
-                    android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
 
-                <item
-                    android:id="@+id/department"
-                    android:title="Department"
-                    android:icon="@drawable/ic_department"/>
+        <item
+            android:id="@+id/department"
+            android:icon="@drawable/ic_department"
+            android:title="Departments" />
 
-                <item
-                    android:id="@+id/institution"
-                    android:title="Institutions"
-                    android:icon="@drawable/ic_institutions"/>
+        <item
+            android:id="@+id/institution"
+            android:icon="@drawable/ic_institutions"
+            android:title="Institutions" />
 
-                <item
-                    android:id="@+id/activity"
-                    android:title="Our Activity and News"
-                    android:icon="@drawable/ic_activity"/>
-
-            </menu>
-        </item>
+        <item
+            android:id="@+id/activity"
+            android:icon="@drawable/ic_activity"
+            android:title="Our Activity and News" />
     </group>
 
     <group android:checkableBehavior="single">
 
-        <item android:title="Information">
-            <menu>
+        <item
+            android:checkable="false"
+            android:enabled="false"
+            android:title="Information"/>
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
 
-                <item
-                    android:id="@+id/about"
-                    android:title="About"
-                    android:icon="@drawable/ic_about"/>
-
-                <item
-                    android:id="@+id/join"
-                    android:title="Join Us"
-                    android:icon="@drawable/ic_joinus"/>
-
-            </menu>
-        </item>
+        <item
+            android:id="@+id/join"
+            android:icon="@drawable/ic_joinus"
+            android:title="Join Us" />
     </group>
 
     <group android:checkableBehavior="single">
 
-        <item android:title="Communication">
-            <menu>
+        <item
+            android:checkable="false"
+            android:enabled="false"
+            android:title="Communication"/>
 
-                <item
-                    android:id="@+id/contact"
-                    android:title="Contact Us"
-                    android:icon="@drawable/ic_contact"/>
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/ic_contact"
+            android:title="Contact Us" />
 
-                <item
-                    android:id="@+id/profile"
-                    android:title="Profile"
-                    android:icon="@drawable/ic_profile"/>
-
-            </menu>
-        </item>
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
 
     </group>
 
