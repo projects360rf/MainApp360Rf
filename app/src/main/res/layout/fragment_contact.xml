@@ -1,14 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_red_light">
+    android:background="@drawable/background"
+    tools:context=".ContactFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contact Us Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#0692D1"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:drawableStart="@drawable/ic_baseline_contact_support_24"
+            android:drawableEnd="@drawable/ic_baseline_contact_support_24"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="CONTACT US"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="#fff"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/form"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerInParent="true"
+        app:cardElevation="10dp"
+        android:layout_margin="20dp"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/header"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                android:layout_width="match_parent"
+                app:endIconMode="clear_text"
+                android:hint="Name"
+                app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="#000000"
+                    android:lines="1"
+                    android:ems="10"
+                    android:paddingStart="5dp"
+                    android:inputType="textNoSuggestions"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_email_input"
+                android:layout_width="match_parent"
+                app:endIconMode="clear_text"
+                android:hint="E-mail"
+                app:startIconDrawable="@drawable/ic_baseline_email_24"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:textColor="#000"
+                    android:lines="1"
+                    android:inputType="textEmailAddress"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_subject_input"
+                android:layout_width="match_parent"
+                app:endIconMode="clear_text"
+                android:hint="Subject"
+                app:startIconDrawable="@drawable/ic_baseline_subject_24"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:ems="10"
+                    android:paddingStart="5dp"
+                    android:textColor="#000"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_phone_input"
+                android:layout_width="match_parent"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/ic_baseline_call_24"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:lines="1"
+                    android:paddingStart="5dp"
+                    android:textColor="#000"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:hint="Phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_message_input"
+                android:layout_width="match_parent"
+                app:endIconMode="clear_text"
+                android:hint="Message"
+                app:startIconDrawable="@drawable/ic_baseline_message_24"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="20sp"
+                    android:paddingStart="5dp"
+                    android:textColor="#000"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_place_input"
+                android:layout_width="match_parent"
+                app:endIconMode="clear_text"
+                android:hint="Place"
+                app:startIconDrawable="@drawable/ic_baseline_place_24"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="20sp"
+                    android:paddingStart="5dp"
+                    android:textColor="#000"
+                    android:inputType="text"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/sendMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/homebtn"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="Send Message"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
 
 </RelativeLayout>
