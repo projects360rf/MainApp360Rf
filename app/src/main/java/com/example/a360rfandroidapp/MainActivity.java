@@ -8,6 +8,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -81,28 +82,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new ContactFragment()).commit();
                 break;
             case R.id.about:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new AboutFragment()).commit();
-                break;
-            case R.id.nav_missionVision:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new MissionVisionFragment()).commit();
-                break;
-            case R.id.nav_choose:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ChooseFragment()).commit();
-                break;
-            case R.id.nav_founder:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new FounderFragment()).commit();
-                break;
-            case R.id.nav_body:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new BodyFragment()).commit();
-                break;
-            case R.id.nav_board:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new BoardFragment()).commit();
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new AboutFragment()).commit();
+                Intent intent = new Intent(this, mainAboutPage.class);
+                startActivity(intent);
                 break;
 
         }
