@@ -183,6 +183,21 @@
         of the 360 Research Foundation.</string>
     <string name="governing_body_9">9.To take all such other legal steps which may appear
         beneficial for the smooth and better management of the 360 Research Foundation. </string>
+    <string name="Energy">The Department of Energy (DE) of the 360 Research Foundation will provide
+        top-quality support to the stakeholders in making energy secure. It aims to improve
+        the investment scenario to achieve an efficient, sustainable and modern energy system.
+        Towards the above objective, it is envisaged to improve the policy framework through
+        effective partnerships with all stakeholders including academia, think-tanks and other.
+
+        The DE of the 360RF will make concerted efforts to reduce import dependence so as to ensure
+        supply of energy, free of disruption and price shocks. The Division will recommend
+        suitable omnibus and sectorial energy policy advice to make all sources of energy
+        available throughout the expanse at affordable prices. While pursuing the above agenda,
+        it will also keep sustainability, local air quality and optimal exploitation of domestic
+        resources in mind. The policy framework will be so geared that energy is supplied through
+        efficient markets to improve India’s competitiveness and spur economic growth. The adoption
+        of modern technology and efficient delivery systems will be high on its priority to fulfill
+        the welfare agenda of the 360 Research Foundation.</string>
 
     <string name="board_person_1_name">Sudhanshu Kumar Shekhar</string>
     <string name="board_person_1_title_1">Founder &amp; President</string>
@@ -213,4 +228,6 @@
     <string name="board_person_7_title_2">360 Research Foundation</string>
 
     <string name="blank">Nothing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
