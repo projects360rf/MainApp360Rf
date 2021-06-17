@@ -18,42 +18,42 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
-    private DrawerLayout drawer;
-    private NavigationView navigation;
-    private Toolbar toolbar;
-    private ActionBarDrawerToggle toggle;
+    private DrawerLayout drawer_1;
+    private NavigationView navigation_1;
+    private Toolbar toolbar_1;
+    private ActionBarDrawerToggle toggle_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        drawer = findViewById(R.id.drawer);
-        navigation = findViewById(R.id.side_navigation);
-        toolbar = findViewById(R.id.toolbar);
+        drawer_1 = findViewById(R.id.drawer_1);
+        navigation_1 = findViewById(R.id.side_navigation_1);
+        toolbar_1 = findViewById(R.id.toolbar_1);
 
 
-        setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar_1);
 
-        toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
+        toggle_1 = new ActionBarDrawerToggle(this, drawer_1, toolbar_1,
                 R.string.open, R.string.close);
 
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
+        drawer_1.addDrawerListener(toggle_1);
+        toggle_1.syncState();
 
-        navigation.setNavigationItemSelectedListener(this);
+        navigation_1.setNavigationItemSelectedListener(this);
 
 
         if (savedInstanceState == null){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-            navigation.setCheckedItem(R.id.home);
+            navigation_1.setCheckedItem(R.id.home);
         }
 
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull  MenuItem item) {
-        drawer.closeDrawer(GravityCompat.START);
+        drawer_1.closeDrawer(GravityCompat.START);
 
         switch (item.getItemId()){
 
@@ -93,8 +93,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public void onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)){
-            drawer.closeDrawer(GravityCompat.START);
+        if (drawer_1.isDrawerOpen(GravityCompat.START)){
+            drawer_1.closeDrawer(GravityCompat.START);
         }
         else{
             super.onBackPressed();

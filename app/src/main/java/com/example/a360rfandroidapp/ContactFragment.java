@@ -48,7 +48,7 @@ public class ContactFragment extends Fragment {
         messageEt=root.findViewById(R.id.message);
         sendMsg=root.findViewById(R.id.sendMsg);
         placeEt=root.findViewById(R.id.place);
-        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar_1);
         toolbar.setTitle("Contact Us");
         final RelativeLayout progressLayout=root.findViewById(R.id.progressLayout);
         final CardView formLayout=root.findViewById(R.id.form);
