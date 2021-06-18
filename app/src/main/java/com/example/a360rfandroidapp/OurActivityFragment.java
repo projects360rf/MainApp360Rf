@@ -1,22 +1,82 @@
 package com.example.a360rfandroidapp;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
+import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import org.jetbrains.annotations.NotNull;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 public class OurActivityFragment extends Fragment {
-
-    @Nullable
-    @org.jetbrains.annotations.Nullable
+    private ArrayList<OurActivityData> activityDataArrayList;
+    private OurActivityAdapter activityAdapter;
+    private RecyclerView activityRV;
+    private ProgressBar loadingPB;
     @Override
-    public View onCreateView(@NonNull @NotNull LayoutInflater inflater, @Nullable @org.jetbrains.annotations.Nullable ViewGroup container, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_our_activity, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View root= inflater.inflate(R.layout.fragment_ouractivity, container, false);
+        activityDataArrayList = new ArrayList<>();
+        activityRV = root.findViewById(R.id.activityRV);
+        loadingPB = root.findViewById(R.id.idPBLoading);
+        getDataFromAPI();
+        return root;
+    }
+
+    private void getDataFromAPI() {
+        String url = "https://spreadsheets.google.com/feeds/list/1w-Y_UJTVIi5WbHTrX8q_6gLi2wpMXKQ_Zl8eGUjuau4/od6/public/values?alt=json";
+        RequestQueue queue = Volley.newRequestQueue(getActivity().getApplicationContext());
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                loadingPB.setVisibility(View.GONE);
+                Log.i("response",response.toString());
+                try {
+                    JSONObject feedObj = response.getJSONObject("feed");
+                    JSONArray entryArray = feedObj.getJSONArray("entry");
+                    for(int i=0; i<entryArray.length(); i++){
+                        JSONObject entryObj = entryArray.getJSONObject(i);
+                        String name = entryObj.getJSONObject("gsx$name").getString("$t");
+                        String description = entryObj.getJSONObject("gsx$description").getString("$t");
+                        String date = entryObj.getJSONObject("gsx$date").getString("$t");
+                        String image = entryObj.getJSONObject("gsx$image").getString("$t");
+                        activityDataArrayList.add(new OurActivityData(name, description, date, image));
+                        activityAdapter = new OurActivityAdapter(activityDataArrayList, getActivity().getApplicationContext());
+                        GridLayoutManager gridLayoutManager=new GridLayoutManager(getActivity().getApplicationContext(),2);
+                        activityRV.setLayoutManager(gridLayoutManager);
+                        activityRV.setAdapter(activityAdapter);
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getActivity().getApplicationContext(), "Fail to get data..", Toast.LENGTH_SHORT).show();
+            }
+        });
+        queue.add(jsonObjectRequest);
     }
 }
