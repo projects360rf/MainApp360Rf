@@ -213,4 +213,8 @@
     <string name="board_person_7_title_2">360 Research Foundation</string>
 
     <string name="blank">Nothing</string>
+    <string name="title_activity_main_news_our_page">mainNewsOurActivityPage</string>
+
+    <string name="news_tab_text_1">News</string>
+    <string name="news_tab_text_2">Our Activity</string>
 </resources>

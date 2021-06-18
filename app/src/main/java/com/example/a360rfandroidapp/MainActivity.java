@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(getApplicationContext(), "institution", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.activity:
+                Intent intent_1 = new Intent(this, mainNewsOurActivityPage.class);
+                startActivity(intent_1);
+                break;
             case R.id.join:
             case R.id.profile:
                 Toast.makeText(getApplicationContext(), "Feature To Be Added Soon", Toast.LENGTH_SHORT).show();
@@ -83,8 +86,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.about:
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new AboutFragment()).commit();
-                Intent intent = new Intent(this, mainAboutPage.class);
-                startActivity(intent);
+                Intent intent_2 = new Intent(this, mainAboutPage.class);
+                startActivity(intent_2);
                 break;
 
         }

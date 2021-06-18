@@ -13,9 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.360RFAndroidApp">
         <activity
+            android:name=".mainNewsOurActivityPage"
+            android:label="@string/title_activity_main_news_our_page"
+            android:theme="@style/Theme.360RFAndroidApp.NoActionBar"></activity>
+        <activity
             android:name=".Splash"
             tools:ignore="ExtraText">
-
             android:label="360RF"
             android:theme="@style/Theme.Theme.360RFAndroidApp.NoActionBar">
             <intent-filter>
@@ -23,17 +26,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-        <activity android:name=".mainAboutPage"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-
-        </activity>
-
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity
+            android:name=".mainAboutPage"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
