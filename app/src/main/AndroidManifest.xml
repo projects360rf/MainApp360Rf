@@ -15,7 +15,7 @@
         <activity
             android:name=".mainNewsOurActivityPage"
             android:label="@string/title_activity_main_news_our_page"
-            android:theme="@style/Theme.360RFAndroidApp.NoActionBar"></activity>
+            android:theme="@style/Theme.360RFAndroidApp.NoActionBar" />
         <activity
             android:name=".Splash"
             tools:ignore="ExtraText">

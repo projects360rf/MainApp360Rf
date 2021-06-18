@@ -7,41 +7,27 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Splash extends AppCompatActivity {
 
-
-
-    //variables
-    Animation topAnim;
-    ImageView image;
-    View mContentView;
-    Handler handler;
+    TextView textView;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-
-
+        textView = findViewById(R.id.splashScreenTextView);
+        imageView = findViewById(R.id.splashScreenLogo);
 
         //animation
-        topAnim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
-
-        //hooks
-        image = findViewById(R.id.logo);
-
-        image.setAnimation(topAnim);
-
-        image.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LOW_PROFILE
-                                    | View.SYSTEM_UI_FLAG_FULLSCREEN
-                                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                                    | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-                                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
+        imageView.animate().alpha(1).setDuration(1500);
+        textView.setText("Connecting....");
+        textView.animate().alpha(0).setDuration(2500);
 
         Thread mythraed = new Thread(){
             @Override
