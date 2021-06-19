@@ -13,7 +13,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
-        app:cardBackgroundColor="#E0F5F8"
+        app:cardBackgroundColor="#FFA500"
         android:layout_marginBottom="8dp"
         android:padding="10dp"
         app:cardCornerRadius="10dp"
@@ -23,20 +23,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:tag="image_tag"
-                android:id="@+id/image_department"
-                app:civ_border_width="2dp"
-                android:layout_width="20dp"
-                android:layout_height="80dp"
-                android:layout_margin="5dp"
-                android:padding="5dp"
-                app:civ_border_color="#ABD8DD"
-                android:elevation="5dp"
-                android:layout_gravity="center"
-                android:layout_weight="0.5"
-                android:src="@drawable/individual1"/>
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -58,6 +44,21 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"/>
 
             </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:tag="image_tag"
+                android:id="@+id/image_department"
+                app:civ_border_width="2dp"
+                android:layout_width="20dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                app:civ_border_color="#ABD8DD"
+                android:elevation="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@drawable/individual1"/>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

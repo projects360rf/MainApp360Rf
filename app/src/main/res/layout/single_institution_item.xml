@@ -12,7 +12,7 @@
         android:id="@+id/card_institution"
         android:layout_gravity="fill"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="#F0FAFB"
+        app:cardBackgroundColor="#FAEBD7"
         android:focusableInTouchMode="true"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
