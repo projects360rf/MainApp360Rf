@@ -66,6 +66,11 @@
             android:id="@+id/about"
             android:icon="@drawable/ic_about"
             android:title="About" />
+
+        <item
+            android:id="@+id/website"
+            android:icon="@drawable/ic_webpage"
+            android:title="Website" />
     </group>
 
 </menu>

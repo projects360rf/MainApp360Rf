@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsInstitutionActivity">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/backbtn_institution"
+        android:textColor="#000"
+        android:gravity="left|top"
+        android:visibility="visible"
+        android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+    <ImageView
+        android:id="@+id/img_institution"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#C5F2F8"
+        android:elevation="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/individual1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_institution">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/form_institution"
+            android:padding="16dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="#EFF8FA"
+            app:cardElevation="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="35dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/title_institution"
+                    android:padding="10dp"
+                    android:text="Make Messi Almost 'Dead',Ospina Proud"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="28sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/desc_institution"
+                    android:text="David Ospania said they were proud to do two remarkable rescue that could make lionel messi frustrated, when Argentina and Colombia meet in the Copa America in 2015.\n\nDavid Ospania said they were proud to do two remarkable rescue that could make lionel messi frustrated, when Argentina and Colombia meet in the Copa America in 2015.\n\nDavid Ospania said they were proud to do two remarkable rescue that could make lionel messi frustrated, when Argentina and Colombia meet in the Copa America in 2015."
+                    android:textColor="#202020"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/join_institution"
+                    android:text="Join Us"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

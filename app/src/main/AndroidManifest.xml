@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.360RFAndroidApp">
-        <activity android:name=".DetailsActivity"></activity>
+        <activity android:name=".DetailsDepartmentActivity"></activity>
+        <activity android:name=".DetailsInstitutionActivity"></activity>
+        <activity android:name=".DetailsActivity" />
         <activity
             android:name=".mainNewsOurActivityPage"
             android:label="@string/title_activity_main_news_our_page"
@@ -28,7 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".mainAboutPage"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />

@@ -65,12 +65,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.department:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new DepartmentFragment()).commit();
-                Toast.makeText(getApplicationContext(), "department", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.institution:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new InstitutionFragment()).commit();
-                Toast.makeText(getApplicationContext(), "institution", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.activity:
                 Intent intent_1 = new Intent(this, mainNewsOurActivityPage.class);
@@ -88,6 +86,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new AboutFragment()).commit();
                 Intent intent_2 = new Intent(this, mainAboutPage.class);
                 startActivity(intent_2);
+                break;
+            case R.id.website:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new WebsiteFragment()).commit();
                 break;
 
         }
