@@ -44,6 +44,11 @@
             android:title="Join Us" />
 
         <item
+            android:id="@+id/internship"
+            android:icon="@drawable/ic_internship"
+            android:title="Apply Internship"/>
+
+        <item
             android:id="@+id/profile"
             android:icon="@drawable/ic_profile"
             android:title="Profile" />

@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
-public class WebsiteFragment extends Fragment {
+public class InternshipFragment extends Fragment {
 
     WebView webView;
 
@@ -17,10 +17,11 @@ public class WebsiteFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View root = inflater.inflate(R.layout.fragment_website, container, false);
+        View root = inflater.inflate(R.layout.fragment_internship, container, false);
 
-        webView = root.findViewById(R.id.websiteWebView);
-        webView.loadUrl("http://360rf.in/");
+        webView = root.findViewById(R.id.internshipFormWebView);
+
+        webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLScELAm_nne9AlBtHqgF0q60qr07Re0vHjFS8lT-05W1Ga7p8Q/viewform");
 
         return root;
     }

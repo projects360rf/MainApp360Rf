@@ -75,6 +75,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent_1);
                 break;
             case R.id.join:
+                Toast.makeText(getApplicationContext(), "Feature To Be Added Soon", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.internship:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new InternshipFragment()).commit();
+                break;
+
             case R.id.profile:
                 Toast.makeText(getApplicationContext(), "Feature To Be Added Soon", Toast.LENGTH_SHORT).show();
                 break;
