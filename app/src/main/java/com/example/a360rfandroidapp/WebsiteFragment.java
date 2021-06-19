@@ -20,7 +20,7 @@ public class WebsiteFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_website, container, false);
 
         webView = root.findViewById(R.id.websiteWebView);
-        webView.loadUrl("http://360rf.in/");
+        webView.loadUrl("https://www.google.com/");
 
         return root;
     }

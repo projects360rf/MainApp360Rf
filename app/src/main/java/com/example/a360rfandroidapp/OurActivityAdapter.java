@@ -47,7 +47,20 @@ public class OurActivityAdapter extends RecyclerView.Adapter<OurActivityAdapter.
 
         // on the below line we are setting data to our text view.
         holder.name.setText(activityData.getName());
-        Picasso.get().load(activityData.getImage()).into(holder.image);
+        //Picasso.get().load(activityData.getImage()).into(holder.image);
+
+        String s=activityData.getImage();
+        if(s.contains("drive"))
+        {
+            //you have to get the part of the link 0B9nFwumYtUw9Q05WNlhlM2lqNzQ
+            String[] p=s.split("/");
+            //Create the new image link
+            String imageLink="https://drive.google.com/uc?export=download&id="+p[5];
+            Picasso.get().load(imageLink).into(holder.image);
+        }
+        else{
+            Picasso.get().load(s).into(holder.image);
+        }
     }
 
     @Override
