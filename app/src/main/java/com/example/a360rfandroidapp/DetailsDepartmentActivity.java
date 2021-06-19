@@ -35,7 +35,20 @@ public class DetailsDepartmentActivity extends AppCompatActivity {
 
         title_dept.setText(title);
         desc_dept.setText(desc);
-        Picasso.get().load(img).into(imageView);
+        //Picasso.get().load(img).into(imageView);
+
+        String s=img;
+        if(s.contains("drive"))
+        {
+            //you have to get the part of the link 0B9nFwumYtUw9Q05WNlhlM2lqNzQ
+            String[] p=s.split("/");
+            //Create the new image link
+            String imageLink="https://drive.google.com/uc?export=download&id="+p[5];
+            Picasso.get().load(imageLink).into(imageView);
+        }
+        else{
+            Picasso.get().load(s).into(imageView);
+        }
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override

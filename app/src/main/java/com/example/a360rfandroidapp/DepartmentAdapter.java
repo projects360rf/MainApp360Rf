@@ -37,7 +37,20 @@ public class DepartmentAdapter extends RecyclerView.Adapter<DepartmentAdapter.Vi
         DepartmentData departmentData = departmentDataArrayList.get(position);
 
         holder.name.setText(departmentData.getName());
-        Picasso.get().load(departmentData.getImage()).into(holder.image);
+        //Picasso.get().load(departmentData.getImage()).into(holder.image);
+
+        String s=departmentData.getImage();
+        if(s.contains("drive"))
+        {
+            //you have to get the part of the link 0B9nFwumYtUw9Q05WNlhlM2lqNzQ
+            String[] p=s.split("/");
+            //Create the new image link
+            String imageLink="https://drive.google.com/uc?export=download&id="+p[5];
+            Picasso.get().load(imageLink).into(holder.image);
+        }
+        else{
+            Picasso.get().load(s).into(holder.image);
+        }
     }
 
     @Override
