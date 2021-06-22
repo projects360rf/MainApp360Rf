@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
-public class CreatorFragment extends Fragment {
+public class DeveloperFragment extends Fragment {
 
     WebView webView;
 
@@ -17,7 +17,7 @@ public class CreatorFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View root = inflater.inflate(R.layout.fragment_creator, container, false);
+        View root = inflater.inflate(R.layout.fragment_developer, container, false);
 
         webView = root.findViewById(R.id.websiteWebView);
         webView.loadUrl("");

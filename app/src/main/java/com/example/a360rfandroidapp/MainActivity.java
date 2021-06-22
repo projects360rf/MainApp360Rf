@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.website:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new CreatorFragment()).commit();
+                        new DeveloperFragment()).commit();
                 break;
 
         }
