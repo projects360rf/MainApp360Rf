@@ -75,7 +75,7 @@
         <item
             android:id="@+id/website"
             android:icon="@drawable/ic_webpage"
-            android:title="Creators" />
+            android:title="Developers" />
     </group>
 
 </menu>
