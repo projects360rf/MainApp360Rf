@@ -21,30 +21,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:tag="image_tag"
-                android:id="@+id/image"
-                app:civ_border_width="2dp"
-                android:layout_width="20dp"
-                android:layout_height="80dp"
-                android:layout_margin="5dp"
-                android:padding="5dp"
-                app:civ_border_color="#ABD8DD"
-                android:elevation="5dp"
-                android:layout_gravity="center"
-                android:layout_weight="0.5"
-                android:src="@drawable/individual1"/>
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:layout_weight="2"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:tag="image_tag"
+                    android:id="@+id/image"
+                    android:src="@drawable/individual1"
+
+                    />
 
                 <TextView
                     android:id="@+id/name"

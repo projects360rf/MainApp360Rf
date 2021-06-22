@@ -46,7 +46,7 @@
         <item
             android:id="@+id/internship"
             android:icon="@drawable/ic_internship"
-            android:title="Apply Internship"/>
+            android:title="Apply For Internship"/>
 
         <item
             android:id="@+id/profile"
@@ -75,7 +75,7 @@
         <item
             android:id="@+id/website"
             android:icon="@drawable/ic_webpage"
-            android:title="Website" />
+            android:title="Creators" />
     </group>
 
 </menu>

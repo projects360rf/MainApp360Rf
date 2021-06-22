@@ -6,14 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
 
+import android.net.Uri;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private NavigationView navigation_1;
     private Toolbar toolbar_1;
     private ActionBarDrawerToggle toggle_1;
+    private View header_1;
+    private TextView website;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer_1 = findViewById(R.id.drawer_1);
         navigation_1 = findViewById(R.id.side_navigation_1);
         toolbar_1 = findViewById(R.id.toolbar_1);
-
+        header_1 = navigation_1.getHeaderView(0);
 
         setSupportActionBar(toolbar_1);
 
@@ -43,12 +46,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         navigation_1.setNavigationItemSelectedListener(this);
 
+        website = header_1.findViewById(R.id.header_website);
+        website.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("http://www.360rf.in/");
+            }
+        });
+
 
         if (savedInstanceState == null){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
             navigation_1.setCheckedItem(R.id.home);
         }
 
+    }
+
+    private void gotoUrl(String s) {
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW, uri));
     }
 
     @Override
@@ -75,7 +91,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent_1);
                 break;
             case R.id.join:
-                Toast.makeText(getApplicationContext(), "Feature To Be Added Soon", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new JoinFragment()).commit();
                 break;
 
             case R.id.internship:
@@ -97,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.website:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new WebsiteFragment()).commit();
+                        new CreatorFragment()).commit();
                 break;
 
         }

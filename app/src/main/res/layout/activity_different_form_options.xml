@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".DifferentFormOptions">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#2196F3"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:id="@+id/type"
+            android:drawableStart="@drawable/ic_baseline_near_me_24"
+            android:drawableEnd="@drawable/ic_baseline_near_me_24"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="JOIN US"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/header"
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/individual1"
+        />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/img"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bodyCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#CCE8F4"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+           <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/individualSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_floatingLabelColor="#1976D2"
+                app:smsp_floatingLabelText="Body"
+                app:smsp_hint="Select One of the Following"
+                app:smsp_hintColor="#388E3C"
+                app:smsp_errorText=""
+                app:smsp_itemColor="#512DA8"
+                app:smsp_itemListColor="#7C4DFF"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_isSearchable="true"
+                app:smsp_multilineError="false"
+                android:layout_margin="5dp"
+                app:smsp_selectedItemListColor="#FF5252" />
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="end"
+               android:text="JOIN NOW"
+               android:padding="10dp"
+               android:background="@drawable/homebtn"
+               android:textColor="#FFFFFF"
+               android:layout_margin="10dp"
+               android:id="@+id/individualBtn"
+               android:drawableEnd="@drawable/ic_baseline_arrow_forward_24" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+</RelativeLayout>
