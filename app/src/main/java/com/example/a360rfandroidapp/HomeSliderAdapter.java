@@ -11,7 +11,9 @@ import com.smarteist.autoimageslider.SliderViewAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeSliderAdapter extends SliderViewAdapter<HomeSliderAdapter.SliderAdapterViewHolder> {
+import static com.example.a360rfandroidapp.HomeSliderAdapter.*;
+
+public class HomeSliderAdapter extends SliderViewAdapter<SliderAdapterViewHolder> {
     Context mContext;
     // list for storing urls of images.
     private final List<HomeViewModel> mSliderItems;
