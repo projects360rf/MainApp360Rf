@@ -5,9 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".DeveloperFragment">
 
-    <WebView
-        android:id="@+id/websiteWebView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/developer_rv"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/single_developer_item"/>
+    <ProgressBar
+        android:id="@+id/developer_pb"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
 
 </FrameLayout>
