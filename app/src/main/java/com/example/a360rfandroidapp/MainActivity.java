@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private View header_1;
     private TextView website;
 
+    boolean first_frag = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,45 +78,55 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new HomeFragment()).commit();
+                first_frag = true;
                 //Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.department:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new DepartmentFragment()).commit();
+                first_frag = false;
                 break;
             case R.id.institution:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new InstitutionFragment()).commit();
+                first_frag = false;
                 break;
             case R.id.activity:
                 Intent intent_1 = new Intent(this, mainNewsOurActivityPage.class);
                 startActivity(intent_1);
+                first_frag = false;
                 break;
             case R.id.join:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new JoinFragment()).commit();
+                first_frag = false;
                 break;
 
             case R.id.internship:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new InternshipFragment()).commit();
+                first_frag = false;
                 break;
 
             case R.id.profile:
                 Toast.makeText(getApplicationContext(), "Feature To Be Added Soon", Toast.LENGTH_SHORT).show();
+                navigation_1.setCheckedItem(R.id.home);
                 break;
             case R.id.contact:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ContactFragment()).commit();
+                first_frag = false;
                 break;
             case R.id.about:
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new AboutFragment()).commit();
                 Intent intent_2 = new Intent(this, mainAboutPage.class);
                 startActivity(intent_2);
+                first_frag = false;
                 break;
             case R.id.website:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new DeveloperFragment()).commit();
+                first_frag = false;
                 break;
 
         }
@@ -126,6 +138,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (drawer_1.isDrawerOpen(GravityCompat.START)){
             drawer_1.closeDrawer(GravityCompat.START);
         }
+
+        else if (!first_frag) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+            navigation_1.setCheckedItem(R.id.home);
+            first_frag = true;
+        }
+
         else{
             super.onBackPressed();
         }
