@@ -23,7 +23,7 @@
                 android:src="@drawable/founder"
                 android:layout_gravity="center"
                 android:contentDescription="@string/blank"
-                android:paddingTop="10sp"/>
+                android:paddingTop="10sp" />
 
             <TextView
                 android:id="@+id/textView1"
