@@ -7,28 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".DetailsInstitutionActivity">
 
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/backbtn_institution"
-        android:textColor="#000"
-        android:gravity="left|top"
-        android:visibility="visible"
-        android:background="@drawable/ic_baseline_arrow_back_24"/>
-
-    <ImageView
-        android:id="@+id/img_institution"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="#C5F2F8"
-        android:elevation="5dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/individual1" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/img_institution">
+        android:layout_alignParentTop="true">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -47,6 +29,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/backbtn_institution"
+                    android:textColor="#000"
+                    android:gravity="left|top"
+                    android:visibility="visible"
+                    android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+                <ImageView
+                    android:id="@+id/img_institution"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:background="#C5F2F8"
+                    android:elevation="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/individual1"
+                    android:layout_gravity="center"/>
 
                 <TextView
                     android:layout_width="match_parent"
