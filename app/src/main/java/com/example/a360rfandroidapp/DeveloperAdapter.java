@@ -44,8 +44,8 @@ public class DeveloperAdapter extends RecyclerView.Adapter<DeveloperAdapter.View
         holder.post.setText(developerData.getPost());
         //holder.mail.setText(developerData.getMail());
         //holder.linkdin.setText(developerData.getLinkedin());
-        holder.linkdin.setHint(developerData.getLinkedin());
-        holder.mail.setHint(developerData.getMail());
+        holder.linkdin.setContentDescription(developerData.getLinkedin());
+        holder.mail.setContentDescription(developerData.getMail());
 
         /*
         holder.mail.setOnClickListener(new View.OnClickListener() {
@@ -83,16 +83,16 @@ public class DeveloperAdapter extends RecyclerView.Adapter<DeveloperAdapter.View
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView name, post, mail, linkdin;
-        private ImageView image;
+        private TextView name, post;
+        private ImageView mail, linkdin, image;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             name = itemView.findViewById(R.id.developer_name);
             post = itemView.findViewById(R.id.developer_post);
-            mail = itemView.findViewById(R.id.developer_email);
-            linkdin = itemView.findViewById(R.id.developer_linkedin);
+            mail = itemView.findViewById(R.id.developer_email_image);
+            linkdin = itemView.findViewById(R.id.developer_linkedin_image);
             image = itemView.findViewById(R.id.developer_image);
         }
     }

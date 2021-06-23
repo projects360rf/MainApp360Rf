@@ -11,7 +11,7 @@
         android:id="@+id/developer_card"
         android:layout_gravity="fill"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="#50F5F0"
+        app:cardBackgroundColor="#f1ebda"
         android:focusableInTouchMode="true"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
@@ -67,43 +67,22 @@
                     android:layout_height="40dp"
                     android:orientation="horizontal"
                     android:paddingTop="5sp"
+                    android:layout_gravity="center"
                     android:gravity="center">
 
                     <ImageView
                         android:id="@+id/developer_email_image"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/mail"/>
-
-                    <TextView
-                        android:id="@+id/developer_email"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Email"
-                        android:layout_marginStart="10dp"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:orientation="horizontal"
-                    android:paddingTop="5sp"
-                    android:gravity="center">
+                        android:src="@drawable/mail"
+                        android:layout_marginEnd="10dp"/>
 
                     <ImageView
                         android:id="@+id/developer_linkedin_image"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/linkedin"/>
-
-                    <TextView
-                        android:id="@+id/developer_linkedin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Linkedin"
+                        android:src="@drawable/linkedin"
                         android:layout_marginStart="10dp"/>
-
                 </LinearLayout>
 
             </LinearLayout>
