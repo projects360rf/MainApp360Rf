@@ -16,10 +16,12 @@ import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class HomeFragment extends Fragment {
 
     private LinearLayout phone, mail_1, mail_2;
-    private LinearLayout instagram, linkedin, twitter, youtube, facebook;
+    private CircleImageView instagram, linkedin, twitter, youtube, facebook;
     SliderView sliderView_home;
 
     @Nullable
