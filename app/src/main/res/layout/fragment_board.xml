@@ -12,7 +12,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="10sp">
+        android:paddingHorizontal="10sp"
+        android:layout_marginTop="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,10 +21,11 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="#92cbf1"
-                android:elevation="10dp">
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:id="@+id/LLH1"
@@ -56,7 +58,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_1_name"
-                            android:textColor="@color/white"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold"
                             android:textSize="20sp" />
 
                         <TextView
@@ -65,7 +68,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_1_title_1"
-                            android:textColor="@color/white"
+                            android:textColor="#2C7100"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                         <TextView
@@ -75,6 +79,7 @@
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_1_title_2"
                             android:textColor="@color/white"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                     </LinearLayout>
@@ -82,15 +87,14 @@
 
             </androidx.cardview.widget.CardView>
 
-
-
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="#92cbf1"
                 android:elevation="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:id="@+id/LLH2"
@@ -123,7 +127,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_2_name"
-                            android:textColor="@color/white"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold"
                             android:textSize="20sp" />
 
                         <TextView
@@ -132,7 +137,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_2_title_1"
-                            android:textColor="@color/white"
+                            android:textColor="#2C7100"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                         <TextView
@@ -142,6 +148,7 @@
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_2_title_2"
                             android:textColor="@color/white"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                     </LinearLayout>
@@ -151,12 +158,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="#92cbf1"
                 android:elevation="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:id="@+id/LLH3"
@@ -189,7 +197,8 @@
                             android:layout_height="wrap_content"
                             android:text="@string/board_person_3_name"
                             android:paddingHorizontal="10sp"
-                            android:textColor="@color/white"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold"
                             android:textSize="20sp"/>
 
                         <TextView
@@ -198,7 +207,8 @@
                             android:layout_height="wrap_content"
                             android:text="@string/board_person_3_title_1"
                             android:paddingHorizontal="10sp"
-                            android:textColor="@color/white"
+                            android:textColor="#2C7100"
+                            android:textStyle="italic"
                             android:textSize="15sp"/>
 
                         <TextView
@@ -208,6 +218,7 @@
                             android:text="@string/board_person_3_title_2"
                             android:paddingHorizontal="10sp"
                             android:textColor="@color/white"
+                            android:textStyle="italic"
                             android:textSize="15sp"/>
 
                     </LinearLayout>
@@ -216,12 +227,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="#92cbf1"
                 android:elevation="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:id="@+id/LLH4"
@@ -254,7 +266,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_4_name"
-                            android:textColor="@color/white"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold"
                             android:textSize="20sp" />
 
                         <TextView
@@ -263,7 +276,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_4_title_1"
-                            android:textColor="@color/white"
+                            android:textColor="#2C7100"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                         <TextView
@@ -273,6 +287,7 @@
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_4_title_2"
                             android:textColor="@color/white"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                     </LinearLayout>
@@ -282,12 +297,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="#92cbf1"
                 android:elevation="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:id="@+id/LLH5"
@@ -320,7 +336,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_5_name"
-                            android:textColor="@color/white"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold"
                             android:textSize="20sp" />
 
                         <TextView
@@ -329,7 +346,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_5_title_1"
-                            android:textColor="@color/white"
+                            android:textColor="#2C7100"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                         <TextView
@@ -339,6 +357,7 @@
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_5_title_2"
                             android:textColor="@color/white"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                     </LinearLayout>
@@ -347,12 +366,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="#92cbf1"
                 android:elevation="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:id="@+id/LLH6"
@@ -385,7 +405,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_6_name"
-                            android:textColor="@color/white"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold"
                             android:textSize="20sp" />
 
                         <TextView
@@ -394,7 +415,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_6_title_1"
-                            android:textColor="@color/white"
+                            android:textColor="#2C7100"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                         <TextView
@@ -404,6 +426,7 @@
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_6_title_2"
                             android:textColor="@color/white"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                     </LinearLayout>
@@ -413,12 +436,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="#92cbf1"
                 android:elevation="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:id="@+id/LLH7"
@@ -451,7 +475,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_7_name"
-                            android:textColor="@color/white"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold"
                             android:textSize="20sp" />
 
                         <TextView
@@ -460,7 +485,8 @@
                             android:layout_height="wrap_content"
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_7_title_1"
-                            android:textColor="@color/white"
+                            android:textColor="#2C7100"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                         <TextView
@@ -470,6 +496,7 @@
                             android:paddingHorizontal="10sp"
                             android:text="@string/board_person_7_title_2"
                             android:textColor="@color/white"
+                            android:textStyle="italic"
                             android:textSize="15sp" />
 
                     </LinearLayout>
