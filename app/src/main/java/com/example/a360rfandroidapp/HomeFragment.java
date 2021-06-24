@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment {
 
     private LinearLayout phone, mail_1, mail_2;
-    private LinearLayout instagram, linkedin;
+    private LinearLayout instagram, linkedin, twitter, youtube, facebook;
     SliderView sliderView_home;
 
     @Nullable
@@ -29,6 +29,10 @@ public class HomeFragment extends Fragment {
 
         instagram = root.findViewById(R.id.home_instagram_section);
         linkedin = root.findViewById(R.id.home_linkedin_section);
+        twitter = root.findViewById(R.id.home_twitter_section);
+        youtube = root.findViewById(R.id.home_youtube_section);
+        facebook = root.findViewById(R.id.home_facebook_section);
+
 
         phone = root.findViewById(R.id.home_phonenumber_section);
         mail_1 = root.findViewById(R.id.home_mail1_section);
@@ -52,14 +56,35 @@ public class HomeFragment extends Fragment {
         linkedin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl1("https://www.linkedin.com/company/360rf/");
+                gotoUrl("https://www.linkedin.com/company/360rf/");
             }
         });
 
         instagram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl2("https://www.instagram.com/360_research_foundation/?hl=en");
+                gotoUrl("https://www.instagram.com/360_research_foundation/?hl=en");
+            }
+        });
+
+        twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://twitter.com/360r_f?lang=en");
+            }
+        });
+
+        youtube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.youtube.com/channel/UCIAD4Ld5NFVmwhuM9VmYVXg");
+            }
+        });
+
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.facebook.com/360rf/");
             }
         });
 
@@ -93,12 +118,7 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
-    private void gotoUrl1(String s) {
-        Uri uri = Uri.parse(s);
-        startActivity(new Intent(Intent.ACTION_VIEW, uri));
-    }
-
-    private void gotoUrl2(String s) {
+    private void gotoUrl(String s) {
         Uri uri = Uri.parse(s);
         startActivity(new Intent(Intent.ACTION_VIEW, uri));
     }
