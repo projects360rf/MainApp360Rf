@@ -1,15 +1,17 @@
 package com.example.a360rfandroidapp;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.chivorn.smartmaterialspinner.SmartMaterialSpinner;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,18 +52,21 @@ public class DifferentFormOptions extends AppCompatActivity {
 
         individualSpinner = findViewById(R.id.individualSpinner);
         individualList = new ArrayList<>();
+        individualList.add("Youth Volunteer Form");
         individualList.add("First Aid (Membership)");
         individualList.add("360 Research and Innovation (Group Registration)");
-        individualList.add("Youth Volunteer Form");
         individualList.add("The Kraft Lady (StartUp support Application Form)");
         individualList.add("Team A (Membership Form)");
+        individualList.add("Gurukul Coaching Center");
+        individualList.add("Master English Classes");
+        individualList.add("The Life Savers");
         individualList.add("Join Our Departments");
         individualSpinner.setItem(individualList);
 
         individualSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
-                //Toast.makeText(DifferentFormOptions.this, String.valueOf(position), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(DifferentOptions.this, String.valueOf(position), Toast.LENGTH_SHORT).show();
                 individualSpinner.setErrorText("");
                 positionIn=position;
             }
