@@ -31,7 +31,6 @@ public class DetailsInstitutionActivity extends AppCompatActivity {
         imageView = findViewById(R.id.img_institution);
 
         backBtn = findViewById(R.id.backbtn_institution);
-        joinBtn = findViewById(R.id.join_institution);
 
         title_inst.setText(title);
         desc_inst.setText(desc);

@@ -31,7 +31,6 @@ public class DetailsDepartmentActivity extends AppCompatActivity {
         imageView = findViewById(R.id.img_department);
 
         backBtn = findViewById(R.id.backbtn_department);
-        joinBtn = findViewById(R.id.join_department);
 
         title_dept.setText(title);
         desc_dept.setText(desc);
