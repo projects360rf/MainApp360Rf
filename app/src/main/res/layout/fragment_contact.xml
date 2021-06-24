@@ -29,8 +29,7 @@
         app:cardCornerRadius="20dp"
         android:layout_centerInParent="true"
         app:cardElevation="10dp"
-        android:layout_margin="20dp"
-        >
+        android:layout_margin="20dp">
         <LinearLayout
 
             android:layout_width="match_parent"
@@ -38,14 +37,14 @@
             android:layout_marginTop="6dp"
             android:layout_below="@+id/header"
             android:layout_marginBottom="2dp"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/outlinedTextField"
                 android:layout_width="match_parent"
                 app:endIconMode="clear_text"
                 android:hint="Name"
+                app:boxBackgroundColor="@color/white"
                 app:startIconDrawable="@drawable/ic_baseline_account_circle_24"
                 android:layout_height="wrap_content">
 
@@ -59,8 +58,7 @@
                     android:lines="1"
                     android:ems="10"
                     android:paddingStart="5dp"
-                    android:inputType="textNoSuggestions"
-                    />
+                    android:inputType="textNoSuggestions"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -68,6 +66,7 @@
                 android:layout_width="match_parent"
                 app:endIconMode="clear_text"
                 android:hint="E-mail"
+                app:boxBackgroundColor="@color/white"
                 app:startIconDrawable="@drawable/ic_baseline_email_24"
                 android:layout_height="wrap_content">
 
@@ -90,6 +89,7 @@
                 android:layout_width="match_parent"
                 app:endIconMode="clear_text"
                 android:hint="Subject"
+                app:boxBackgroundColor="@color/white"
                 app:startIconDrawable="@drawable/ic_baseline_subject_24"
                 android:layout_height="wrap_content">
 
@@ -111,6 +111,7 @@
                 android:id="@+id/name_phone_input"
                 android:layout_width="match_parent"
                 app:endIconMode="clear_text"
+                app:boxBackgroundColor="@color/white"
                 app:startIconDrawable="@drawable/ic_baseline_call_24"
                 android:layout_height="wrap_content">
 
@@ -133,6 +134,7 @@
                 android:id="@+id/name_message_input"
                 android:layout_width="match_parent"
                 app:endIconMode="clear_text"
+                app:boxBackgroundColor="@color/white"
                 android:hint="Message"
                 app:startIconDrawable="@drawable/ic_baseline_message_24"
                 android:layout_height="wrap_content">
@@ -152,7 +154,8 @@
                 android:id="@+id/name_place_input"
                 android:layout_width="match_parent"
                 app:endIconMode="clear_text"
-                android:hint="Place"
+                android:hint="Address"
+                app:boxBackgroundColor="@color/white"
                 app:startIconDrawable="@drawable/ic_baseline_place_24"
                 android:layout_height="wrap_content">
 
