@@ -47,12 +47,13 @@ public class DeveloperAdapter extends RecyclerView.Adapter<DeveloperAdapter.View
         holder.linkdin.setContentDescription(developerData.getLinkedin());
         holder.mail.setContentDescription(developerData.getMail());
 
-        /*
+
         holder.mail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setData(Uri.parse("mailto:"+holder.mail.getHint().toString()));
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.setData(Uri.parse("mailto:"+holder.mail.getContentDescription().toString()));
                 context.startActivity(intent);
             }
         });
@@ -61,10 +62,11 @@ public class DeveloperAdapter extends RecyclerView.Adapter<DeveloperAdapter.View
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(holder.linkdin.getHint().toString()));
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.setData(Uri.parse(holder.linkdin.getContentDescription().toString()));
                 context.startActivity(intent);
             }
-        });*/
+        });
 
         String s = developerData.getImage();
         if (s.contains("drive")) {
