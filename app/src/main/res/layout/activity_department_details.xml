@@ -69,6 +69,14 @@
                     android:textColor="#202020"
                     android:textSize="20sp"/>
 
+                <Button
+                    android:id="@+id/demoTestingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Join"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"/>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </ScrollView>

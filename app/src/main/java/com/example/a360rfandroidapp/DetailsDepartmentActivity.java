@@ -2,6 +2,7 @@ package com.example.a360rfandroidapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +32,7 @@ public class DetailsDepartmentActivity extends AppCompatActivity {
         imageView = findViewById(R.id.img_department);
 
         backBtn = findViewById(R.id.backbtn_department);
+        joinBtn = findViewById(R.id.demoTestingButton);
 
         title_dept.setText(title);
         desc_dept.setText(desc);
@@ -48,6 +50,15 @@ public class DetailsDepartmentActivity extends AppCompatActivity {
         else{
             Picasso.get().load(s).into(imageView);
         }
+
+        joinBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), DifferentFormOptions.class);
+                i.putExtra("type","Individual");
+                startActivity(i);
+            }
+        });
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override

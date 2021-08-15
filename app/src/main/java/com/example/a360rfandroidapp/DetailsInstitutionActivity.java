@@ -1,5 +1,6 @@
 package com.example.a360rfandroidapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,10 +32,12 @@ public class DetailsInstitutionActivity extends AppCompatActivity {
         imageView = findViewById(R.id.img_institution);
 
         backBtn = findViewById(R.id.backbtn_institution);
+        joinBtn = findViewById(R.id.demoTestingButton);
 
         title_inst.setText(title);
         desc_inst.setText(desc);
         //Picasso.get().load(img).into(imageView);
+        //joinBtn.setVisibility(View.VISIBLE);
 
         String s=img;
         if(s.contains("drive"))
@@ -48,6 +51,15 @@ public class DetailsInstitutionActivity extends AppCompatActivity {
         else{
             Picasso.get().load(s).into(imageView);
         }
+
+        joinBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), DifferentFormOptions.class);
+                i.putExtra("type","Individual");
+                startActivity(i);
+            }
+        });
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override

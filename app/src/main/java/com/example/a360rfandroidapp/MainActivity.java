@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             navigation_1.setCheckedItem(R.id.home);
         }
 
+
+
     }
 
     private void gotoUrl(String s) {
